@@ -1,8 +1,12 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/:path*",
-      "destination": "https://gist-alumni-system.onrender.com/api/:path*"
+      "src": "/api/(.*)",
+      "dest": "https://gist-alumni-system.onrender.com/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
