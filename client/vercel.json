@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://gist-alumni-system.onrender.com/api/$1"
+    }
+  ]
+}
